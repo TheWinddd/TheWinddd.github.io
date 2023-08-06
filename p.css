@@ -12,6 +12,7 @@ html, body{
     background-color: rgb(0, 0, 33);
     color: white;
     font-size: 15px;
+    overflow-x: hidden;
 }
 a{
     color: white;
@@ -768,12 +769,12 @@ header nav .active{
 
 /* mobile */
 @media only screen and (max-width:46.1875em ) {
-    body{overflow-x: hidden;}
+
    /* header */
     header .logo a img{
         display: none;
     }
-    header{padding: 0px;}
+    header{ position: fixed;}
     header .phai{
         width: 100%;
        font-size: 13px;
