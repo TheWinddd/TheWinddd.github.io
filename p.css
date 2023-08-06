@@ -768,12 +768,19 @@ header nav .active{
 
 /* mobile */
 @media only screen and (max-width:46.1875em ) {
+    body{overflow-x: hidden;}
    /* header */
     header .logo a img{
         display: none;
     }
+    header{padding: 0px;}
     header .phai{
         width: 100%;
+       font-size: 13px;
+       padding-left: 10px;
+    }
+    header .phai ul li{
+       margin: 0 20px;
     }
     /* home */
     .container .right img{
@@ -804,32 +811,35 @@ header nav .active{
     display: grid;
     grid-template-columns: 50% 50%;
     padding-left: 10px;
-    font-size: 10px;
+    
     }
     .father .con .cot1{
-        padding-left: 10px;
+        padding-left: 15px;
+        width: 100%;
     }
-    .father .con .cot2{
-        padding-left: 10px;
-    }
-    .father .con ul li h6 {
-        font-size: 12px;
-        
-    }
+    .father .con .cot2{padding-left: 1px; }
+    .father .con .cot2 ul li:nth-child(4n){display: none;} 
+    .father .con .cot2 ul li:last-child{margin-left: -13px;} 
+    .father .con ul li h6 { font-size: 13px; }
     .father .con ul li span {
-        font-size: 13px;
+        font-size: 12px;
        padding-right: 10px;
     }
     .father .con .cot2 .list2 li a span{
-        padding: 30px 20px;
         text-transform: uppercase;
     }
+   
 /* resume-container */
     .container-father .row1 .col1 h2{  margin-left: 60px; }
-    .container-father .row1 .col1 .resume-items .item{  margin-left: 40px;  } 
-    
-    .container-father .row1 .col2 h2{  margin-left: 70px;padding-top: 40px; }
-    .container-father .row1 .col2 .resume-items .item{  margin-left: 66px;  } 
+    .container-father .row1 .col1 .resume-items {
+        margin-left: 12px;
+    }    
+    .card {width: 300px;}
+    .card .card-body{width: 300px; display: flex;}
+    .resume-items .item .card .font-weight {font-size: 13px;}
+    .resume-items .item .card-body p {font-size: 11px; flex-wrap: wrap;}
+    .container-father .row1 .col2 .resume-items .item{  margin-left:18px;  } 
+    .container-father .row1 .col2 h2{  padding-left:70px;  } 
 /* Skill */
     .container-father .col-text h2{margin-top: 30px; margin-left: 70px;}
     .container-father .row2{display: block;}
