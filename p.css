@@ -234,6 +234,7 @@ li .btn {
     transition: 1s;
     overflow: hidden;
     position: relative; 
+    text-transform: uppercase;
 }
 
 .cot2 li .btn::before {
@@ -791,14 +792,16 @@ header nav .active{
         display: none;
     }
     .container .banner .left{
-        font-size: 10px;
+        font-size: 8px;
         width: 100%;
         margin: auto;
         margin-left: 20px;
     }
-    .container .banner .left .pha{font-size: 32px;}
+    .container .banner .left .pha{font-size: 28px;}
     .container .banner .left p{opacity: 0.8;padding-top: 10px;}
     .container .banner{display: block;}
+    .cach{margin: 0px 2px;}
+    
     /* about */
     .containerAbout .textAbout h2{
         font-size: 35px;
