@@ -793,7 +793,7 @@ header nav .active{
     }
     .cach{ margin: 0px 0px;}
     .container .banner .left{
-        font-size: 7px;
+        font-size: 6px;
         width: 100%;
         margin: auto;
         margin-left: 20px;
@@ -801,7 +801,8 @@ header nav .active{
     .container .banner .left .pha{font-size: 28px;}
     .container .banner .left p{opacity: 0.8;padding-top: 10px;}
     .container .banner{display: block;}
-    .cach{margin: 0px 2px;}
+   .left .find ul li{font-size: 15px;}
+   .left .find h3{font-size: 15px;}
     
     /* about */
     .containerAbout .textAbout h2{
