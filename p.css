@@ -12,10 +12,6 @@ html, body{
     background-color: rgb(0, 0, 33);
     color: white;
     font-size: 15px;
-    
-}
-.odest{
-    overflow-x: hidden;
 }
 a{
     color: white;
@@ -42,7 +38,7 @@ header{
     opacity: 0;
     visibility: hidden;
 } */
-.logo img {height: 238px;   margin-top: 12px;margin-left: -43px;}
+.logo img {height: 238px;   margin-top: 12px;margin-left: 71px;}
 .phai ul{
     display: flex;
     }
@@ -79,12 +75,13 @@ header .phai ul li:hover::after{
 .banner{
     display: grid;
     grid-template-columns: 60% 40%;
+    
     padding-bottom: 50px;
 }
 .banner .left{
     text-align: justify;
     padding-right: 50px;
-    margin: 126px -55px;
+    margin: 126px 16px;
 }
 .banner .left h1{
     font-size: 2.5em;
@@ -119,7 +116,7 @@ header .phai ul li:hover::after{
     align-items: center;
     transition: 0.4s;
     margin-left: -3px;
-    
+    font-size: 17px;
     
 }
 .find ul li:hover{
@@ -138,10 +135,39 @@ header .phai ul li:hover::after{
     to{transform: translateY(0px);}
     
 }
-.mau{
+/* .mau{
     background-image:var(--gradient);
     -webkit-background-clip: text  ;
     -webkit-text-fill-color:transparent
+} */
+.mau{position: relative;}
+.mau h2{position: absolute; 
+
+    margin-top: -3px;
+    margin-left: 12px;
+    font-size: 40px;}
+.mau h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #24BAE3;
+    display: inline-block;
+}
+
+.mau h2:nth-child(2) {
+    background: -webkit-linear-gradient(-10deg, #D000F7, #24BAE3);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+    animation: wave 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%,54% 60%, 70% 61%, 84% 59%, 100% 52%,100% 100%, 0% 100%);
+    }
+    
+    50% {
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%,51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
 }
 .cach{
     margin: 0 12px;
@@ -215,6 +241,8 @@ header .phai ul li:hover::after{
     margin-top: -8px;
 }
 .father .con ul li span {
+    text-transform: capitalize;
+    margin-bottom: 7px;
     font-weight: 400;
     font-size: 16px;
     opacity: .8;
@@ -234,7 +262,6 @@ li .btn {
     transition: 1s;
     overflow: hidden;
     position: relative; 
-    text-transform: uppercase;
 }
 
 .cot2 li .btn::before {
@@ -769,105 +796,3 @@ header nav .active{
     border-bottom: none;
     padding: 2px 5px;
 }
-/* mobile và tablet */
-
-/* mobile */
-@media only screen and (max-width:46.1875em ) {
-
-   /* header */
-    header .logo a img{
-        display: none;
-    }
-    header{ position: fixed;}
-    header .phai{
-        width: 100%;
-       font-size: 13px;
-       padding-left: 10px;
-    }
-    header .phai ul li{
-       margin: 0 20px;
-    }
-    /* home */
-    .container .right img{
-        display: none;
-    }
-    .cach{ margin: 0px 0px;}
-    .container .banner .left{
-        font-size: 6px;
-        width: 100%;
-        margin: auto;
-        margin-left: 20px;
-    }
-    .container .banner .left .pha{font-size: 28px;}
-    .container .banner .left p{opacity: 0.8;padding-top: 10px;}
-    .container .banner{display: block;}
-   .left .find ul li{font-size: 15px;}
-   .left .find h3{font-size: 15px;}
-    
-    /* about */
-    .containerAbout .textAbout h2{
-        font-size: 35px;
-        padding-top: 10px;}
-    .containerAbout .noidungngan{font-size: 13px;}
-    .containerAbout .noidungngan::before, .noidungngan::after{ display: none;}
-    .containerInfo .father{display: block; padding-bottom: 30px;}
-    .containerInfo .father .info img{
-        height: 400px;
-        margin-left: 28%;
-        margin-top: -12px;
-    }
-    .father .con{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding-left: 10px;
-    
-    }
-    .father .con .cot1{
-        padding-left: 15px;
-        width: 100%;
-    }
-    .father .con .cot2{padding-left: 1px; }
-    .father .con .cot2 ul li:nth-child(4n){display: none;} 
-    .father .con .cot2 ul li:last-child{margin-left: -13px;} 
-    .father .con ul li h6 { font-size: 13px; }
-    .father .con ul li span {
-        font-size: 12px;
-       padding-right: 10px;
-    }
-    .father .con .cot2 .list2 li a span{
-        text-transform: uppercase;
-    }
-   
-/* resume-container */
-    .container-father .row1 .col1 h2{  margin-left: 60px; }
-    .container-father .row1 .col1 .resume-items {
-        margin-left: 12px;
-    }    
-    .card {width: 300px;}
-    .card .card-body{width: 300px; display: flex;}
-    .resume-items .item .card .font-weight {font-size: 13px;}
-    .resume-items .item .card-body p {font-size: 11px; flex-wrap: wrap;}
-    .container-father .row1 .col2 .resume-items .item{  margin-left:18px;  } 
-    .container-father .row1 .col2 h2{  padding-left:70px;  } 
-/* Skill */
-    .container-father .col-text h2{margin-top: 30px; margin-left: 70px;}
-    .container-father .row2{display: block;}
-/* contact */
-    .catainer-contact .row-contact{display: block;}
-    .row-contact .col-left{ margin-left: 40px;}
-    .row-contact .col-right p{ width: 90%; text-align: center; padding-left: 53px; padding-top: 20px;}
-    .row-contact .col-right .chia-cot{display: block; width: 90%;}
-    .row-contact .col-right .chia-cot .form-group-col:first-child{margin-left: 10px;}
-    .row-contact .col-right form .row{
-        padding-left: 28px;
-    }
-    .row-contact .col-right .form-group-col2{width: 90%; margin-left: 6px; padding-right: 12px;}
-    .chia-cot-2{display: block;}
-    .form-message{display: none;}
-    .submit-form{padding-left:40px;}
-
-}   
-/* tablet*/
-/* @media only screen and (min-width:46.25em)  and (max-width:63.975em ) {
-    
-} */
