@@ -48,6 +48,7 @@ header .phai ul li{
     margin: 0 30px;
     transition: 0.1s;
     overflow: hidden;
+   font-size: 20px;
 
 }
 header .phai ul li::after{
