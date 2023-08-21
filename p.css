@@ -48,7 +48,7 @@ header .phai ul li{
     margin: 0 30px;
     transition: 0.1s;
     overflow: hidden;
-   font-size: 20px;
+    font-size: 20px;
 
 }
 header .phai ul li::after{
@@ -137,11 +137,11 @@ header .phai ul li:hover::after{
     to{transform: translateY(0px);}
     
 }
-/* .mau{
+.mau1{
     background-image:var(--gradient);
     -webkit-background-clip: text  ;
     -webkit-text-fill-color:transparent
-} */
+}
 .mau{position: relative;}
 .mau h2{position: absolute; 
 
@@ -187,6 +187,7 @@ header .phai ul li:hover::after{
     font-weight: 900;
     text-transform: uppercase;
     margin-bottom: 0;
+    
 }
 .containerAbout .noidungngan{
     position: relative;
@@ -836,7 +837,9 @@ header nav .active{
      /* about */
      .containerAbout .textAbout h2{
          font-size: 35px;
-         padding-top: 10px;}
+         padding-top: 10px;
+         
+        }
      .containerAbout .noidungngan{font-size: 13px;}
      .containerAbout .noidungngan::before, .noidungngan::after{ display: none;}
      .containerInfo .father{display: block; padding-bottom: 30px;}
