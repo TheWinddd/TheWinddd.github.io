@@ -77,3 +77,28 @@ window.onscroll=() => {
         }
     });
 }
+// submit //
+    let form = document.querySelector('form');
+    let formMessage = document.querySelector('.form-message');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let data = new FormData(form);
+        
+        fetch('https://script.google.com/macros/s/AKfycbxkRmhGFKmgKPVNBObAxS-KZOl2QLqVKk9bAN0niVuulsSu1ZLiNnZSDyt9eSlIXJbK/exec', {
+            method: "POST",
+            body: data
+        })
+        .then(response => {
+            if (response.ok) {
+                // Xử lý khi submit thành công ở đây
+                formMessage.style.display = 'block'; // Hiển thị phần form-message
+            } else {
+                // Xử lý khi có lỗi xảy ra ở đây
+                console.error('Error:', response.statusText);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
