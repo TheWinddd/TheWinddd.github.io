@@ -572,6 +572,7 @@ li .btn span {
     background-image:var(--gradient);
     -webkit-background-clip: text  ;
     -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 /* Đảm bảo ảnh có kích thước tối đa và tự điều chỉnh kích thước */
