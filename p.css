@@ -128,8 +128,8 @@ header .phai ul li:hover::after{
 }
 .banner .right img{
     height: 572px;
-    padding-left: 110px;
-    margin-top: 22px;
+    padding-left: 69px;
+    /* margin-top: 22px; */
     overflow: hidden;
    animation: kaa 2.5s linear infinite alternate;
 }
@@ -228,8 +228,8 @@ header .phai ul li:hover::after{
 
 }
 .info img {
-    height: 500px;
-   margin: 0px 0px;
+    height: 478px;
+   margin: 0px 33px;
 }
 
 .father .con{
