@@ -531,6 +531,55 @@ li .btn span {
     position: relative;
     overflow: hidden;
 }
+/* Đảm bảo .item có kiểu dáng tương đối để chứa cả ảnh và khối màu đỏ */
+.slider .list .item {
+    position: relative;
+    margin-right: 20px; /* Điều chỉnh khoảng cách tùy ý */
+}
+
+/* Đặt khối màu đỏ ở giữa và trên ảnh */
+.slider .list .item .red-box {
+    background-color: #c6c2c1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    width: 250px; /* Điều chỉnh kích thước màu đỏ tùy ý */
+    height: 100px; /* Điều chỉnh kích thước màu đỏ tùy ý */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Đặt z-index để đảm bảo nó nằm trên ảnh */
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 20px;
+}
+.slider .list .item:hover .red-box{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Thêm kiểu dáng cho đường link bên trong khối màu đỏ */
+.slider .list .item .red-box a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-image:var(--gradient);
+    -webkit-background-clip: text  ;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Đảm bảo ảnh có kích thước tối đa và tự điều chỉnh kích thước */
+.slider .list .item img {
+    max-width: 100%;
+    height: auto;
+}
+
 .slider .list{
     position: absolute;
     width: max-content;
