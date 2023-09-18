@@ -407,12 +407,32 @@ li .btn span {
 }
 .resume-items .item .card-body {
     padding: 0;
+
+}
+.resume-items .item:nth-child(2n) .card-body{
+    cursor: pointer;
 }
 .resume-items .item .card-body p {
     font-size: 14px;
     margin: 0;
     line-height: 28px;
     width: 446px;
+    transition: 0.4s;
+}
+.card-body img {
+    display: none;
+}
+
+/* Đè ảnh lên trên thẻ <p> khi hover */
+.card-body:hover img {
+    display: block;
+    position: absolute;
+    width: 256px;
+    height: 206px;
+    z-index: 1; 
+    top: 55px; 
+    right: 0; 
+    border-radius: 10px;
 }
 .none{
     text-transform: none ;
