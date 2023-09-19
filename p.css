@@ -823,7 +823,7 @@ form .row .form-group-col2 textarea{
     outline: none !important;
     overflow: hidden;
     display: inline-block;
-   
+    transition:0.4s; 
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5px;
     border: 0;
